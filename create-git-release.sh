@@ -51,7 +51,7 @@ fi
 
 project_folder="${@:$OPTIND}"
 
-# if version is not set or empty string
+# if version is not set or its value is empty string
 while [ -z "$version" ]; do
     echo -n "Insert the release version (i.e. 1.0.0): "
     read version
