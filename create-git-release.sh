@@ -81,6 +81,7 @@ read -p "Review the merge result, then press enter to push the changes to $devel
 git push
 
 print_separator
+read -p "Press enter to proceed merging $release_branch into $main_branch"
 git checkout "$main_branch"
 git merge --no-ff "$release_branch"
 print_separator
